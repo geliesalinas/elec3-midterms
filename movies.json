@@ -1,0 +1,23 @@
+{
+    "movie1": {
+        "id":1,
+        "title":"Interstellar",
+        "plot":"Earth's future has been riddled by disasters, famines, and droughts. There is only one way to ensure mankind's survival: Interstellar travel. A newly discovered wormhole in the far reaches of our solar system allows a team of astronauts to go where no manhas gone before, a planet that may have the right environment to sustain human life. ",
+        "director":"Christopher Nolan",
+        "dateReleased":"2021-11-10",
+        "Actors":"Matt Damon, Jessica Chastain, Matthew McConaughey, Timothee Chalamet ",
+        "Genre":"Action / Adventure / Drama / Sci-Fi / Thriller",
+        "Image":"interstellar.jpg"
+    },
+  
+    "movie2":  {
+      "id":2,
+      "title":"Test",
+      "plot":"testing ",
+      "director":"tester",
+      "dateReleased":"2021-11-10",
+      "Actors":"Testing Man",
+      "Genre":"Action ",
+      "Image":"testing.jpg"
+    }
+}
