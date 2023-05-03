@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const mainController = require("../controllers/mainController");
+const mainController = require("../controllers/appController");
 const multer = require('multer');
 
 //image storing configuration
@@ -17,12 +17,12 @@ const storage = multer.diskStorage({
 //middleware for image
 var upload = multer({storage:storage}).single('img');
 
-router.get("/", mainController.getIndex);
-router.get("/addMovie", mainController.getAddMovie);
-router.post("/addMovie", upload, mainController.postAddMovie);
-router.get("/EditMovie/:id", mainController.getEditMovie);
-router.post("/EditMovie/:id", upload, mainController.postEditMovie);
-router.get("/delete/:id", mainController.deleteMovie);
+router.get("/", appController.getIndex);
+router.get("/addMovie", appController.getAddMovie);
+router.post("/addMovie", upload, appController.postAddMovie);
+router.get("/EditMovie/:id", appController.getEditMovie);
+router.post("/EditMovie/:id", upload, appController.postEditMovie);
+router.get("/delete/:id", appController.deleteMovie);
 
 module.exports = router;
 
